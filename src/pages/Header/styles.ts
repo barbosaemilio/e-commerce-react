@@ -9,6 +9,13 @@ export const Header = styled.header`
     url(${headerBg});
   background-size: cover;
   background-position: center;
+
+  media (max-width: 768px) {
+    height: 140px;
+  }
+
+  @media (max-width: 480px) {
+    height: 100px;
 `
 export const Inner = styled.div`
   max-width: 1024px;
@@ -18,10 +25,22 @@ export const Inner = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
+
+  @media (max-width: 480px) {
+    padding: 0 12px;
+  }
 `
 
 export const Logo = styled.img`
   height: 60px;
+
+  @media (max-width: 768px) {
+    height: 45px;
+  }
+
+  @media (max-width: 480px) {
+    height: 32px;
+  }
 `
 
 export const Carrinho = styled.span`
