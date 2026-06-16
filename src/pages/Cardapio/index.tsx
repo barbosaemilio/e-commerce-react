@@ -1,4 +1,5 @@
 import * as S from './styles'
+import Hero from '../Hero'
 
 import card1 from '../../assets/images/card1.jpg'
 import card2 from '../../assets/images/card2.jpg'
@@ -6,6 +7,8 @@ import card3 from '../../assets/images/card3.jpg'
 import card4 from '../../assets/images/card4.jpg'
 import card5 from '../../assets/images/card5.png'
 import card6 from '../../assets/images/card6.jpg'
+import { Container } from '../../styles'
+import Header from '../Header'
 
 const pratos = [
   {
@@ -54,19 +57,23 @@ const pratos = [
 
 const Cardapio = () => (
   <>
-    <S.Titulo>Nosso Cardápio</S.Titulo>
-    <S.Lista>
-      {pratos.map((prato) => (
-        <S.Card key={prato.id}>
-          <S.Imagem src={prato.imagem} alt={prato.titulo} />
-          <S.Infos>
-            <S.Tituloprato>{prato.titulo}</S.Tituloprato>
-            <S.Descricao>{prato.descricao}</S.Descricao>
-            <S.Botao>Adicionar ao carrinho</S.Botao>
-          </S.Infos>
-        </S.Card>
-      ))}
-    </S.Lista>
+    <Header />
+    <Hero />
+    <Container>
+      <S.Titulo>Nosso Cardápio</S.Titulo>
+      <S.Lista>
+        {pratos.map((prato) => (
+          <S.Card key={prato.id}>
+            <S.Imagem src={prato.imagem} alt={prato.titulo} />
+            <S.Infos>
+              <S.Tituloprato>{prato.titulo}</S.Tituloprato>
+              <S.Descricao>{prato.descricao}</S.Descricao>
+              <S.Botao>Adicionar ao carrinho</S.Botao>
+            </S.Infos>
+          </S.Card>
+        ))}
+      </S.Lista>
+    </Container>
   </>
 )
 

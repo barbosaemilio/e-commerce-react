@@ -3,10 +3,8 @@ import fundo from '../../assets/images/footer.png'
 import { cores } from '../../styles'
 
 export const FooterContainer = styled.footer`
-  width: 100%;
-  max-width: 1366px;
   height: 198px;
-  margin: 0 auto;
+  width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(${fundo});
   background-size: cover;
@@ -16,9 +14,7 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 16px;
   margin-top: 42px;
-  margin-bottom: 42px;
 
   @media (max-width: 768px) {
     height: auto;

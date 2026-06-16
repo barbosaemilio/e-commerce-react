@@ -8,61 +8,117 @@ const Cards = () => (
   <S.Container>
     <S.Card>
       <S.Imagem src={image1} alt="Prato 1" />
+      <S.Tag>Italiano</S.Tag>
       <S.Infos>
-        <S.Titulo>La Dolce Vita Trattoria </S.Titulo>
+        <S.TopRow>
+          <S.Titulo>La Dolce Vita Trattoria</S.Titulo>
+          <S.Avaliacao>
+            <span>4.5</span>
+            <S.Estrela>★</S.Estrela>
+          </S.Avaliacao>
+        </S.TopRow>
         <S.Descricao>
-          {' '}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          debitis fuga labore alias? Amet nulla optio nobis, magnam veniam
-          reprehenderit! Vero distinctio odio quod ducimus. Sequi provident
-          repudiandae neque velit?{' '}
+          debitis fuga labore alias? Amet nulla optio nobis.
         </S.Descricao>
         <S.Botao href="#">Saiba mais</S.Botao>
       </S.Infos>
     </S.Card>
+
     <S.Card>
       <S.Imagem src={image2} alt="Prato 2" />
+      <S.Tag>Japonês</S.Tag>
       <S.Infos>
-        <S.Titulo>Hioki Sushi </S.Titulo>
+        <S.TopRow>
+          <S.Titulo>Hioki Sushi</S.Titulo>
+          <S.Avaliacao>
+            <span>4.8</span>
+            <S.Estrela>★</S.Estrela>
+          </S.Avaliacao>
+        </S.TopRow>
         <S.Descricao>
-          {' '}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
-          corporis, cumque facere autem dolores neque dignissimos earum fugiat
-          labore alias inventore ab facilis repellendus voluptates in!
-          Architecto, corrupti officia.
+          corporis, cumque facere autem dolores neque dignissimos.
         </S.Descricao>
         <S.Botao href="#">Saiba mais</S.Botao>
       </S.Infos>
     </S.Card>
+
     <S.Card>
       <S.Imagem src={image3} alt="Prato 3" />
+      <S.Tag>Sobremesas</S.Tag>
       <S.Infos>
-        <S.Titulo>Sobremesas </S.Titulo>
+        <S.TopRow>
+          <S.Titulo>Sobremesas</S.Titulo>
+          <S.Avaliacao>
+            <span>4.2</span>
+            <S.Estrela>★</S.Estrela>
+          </S.Avaliacao>
+        </S.TopRow>
         <S.Descricao>
-          {' '}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
-          corporis, cumque facere autem dolores neque dignissimos earum fugiat
-          labore alias inventore ab facilis repellendus voluptates in!
-          Architecto, corrupti officia.
+          corporis, cumque facere autem dolores neque dignissimos.
         </S.Descricao>
         <S.Botao href="#">Saiba mais</S.Botao>
       </S.Infos>
     </S.Card>
+
     <S.Card>
-      <S.Imagem src={image4} alt="Prato 2" />
+      <S.Imagem src={image4} alt="Prato 4" />
+      <S.Tag>Hamburger</S.Tag>
       <S.Infos>
-        <S.Titulo>Hamburguer Artesal </S.Titulo>
+        <S.TopRow>
+          <S.Titulo>Hamburguer Artesanal</S.Titulo>
+          <S.Avaliacao>
+            <span>4.7</span>
+            <S.Estrela>★</S.Estrela>
+          </S.Avaliacao>
+        </S.TopRow>
         <S.Descricao>
-          {' '}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
-          corporis, cumque facere autem dolores neque dignissimos earum fugiat
-          labore alias inventore ab facilis repellendus voluptates in!
-          Architecto, corrupti officia.
+          corporis, cumque facere autem dolores neque dignissimos.
+        </S.Descricao>
+        <S.Botao href="#">Saiba mais</S.Botao>
+      </S.Infos>
+    </S.Card>
+
+    <S.Card>
+      <S.Imagem src={image1} alt="Prato 1" />
+      <S.Tag>Italiano</S.Tag>
+      <S.Infos>
+        <S.TopRow>
+          <S.Titulo>La Dolce Vita Trattoria</S.Titulo>
+          <S.Avaliacao>
+            <span>4.5</span>
+            <S.Estrela>★</S.Estrela>
+          </S.Avaliacao>
+        </S.TopRow>
+        <S.Descricao>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          debitis fuga labore alias? Amet nulla optio nobis.
+        </S.Descricao>
+        <S.Botao href="#">Saiba mais</S.Botao>
+      </S.Infos>
+    </S.Card>
+
+    <S.Card>
+      <S.Imagem src={image2} alt="Prato 2" />
+      <S.Tag>Japonês</S.Tag>
+      <S.Infos>
+        <S.TopRow>
+          <S.Titulo>Hioki Sushi</S.Titulo>
+          <S.Avaliacao>
+            <span>4.8</span>
+            <S.Estrela>★</S.Estrela>
+          </S.Avaliacao>
+        </S.TopRow>
+        <S.Descricao>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
+          corporis, cumque facere autem dolores neque dignissimos.
         </S.Descricao>
         <S.Botao href="#">Saiba mais</S.Botao>
       </S.Infos>
     </S.Card>
   </S.Container>
 )
-
 export default Cards

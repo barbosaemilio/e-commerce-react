@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Titulo = styled.h2`
-  color: ${cores.vermelho};
+  color: ${cores.branco};
   font-size: 32px;
   text-align: center;
   margin: 40px 0 24px 0;
@@ -26,8 +26,8 @@ export const Lista = styled.div`
 
 export const Card = styled.div`
   width: 304px;
-  background-color: ${cores.cinza};
-  border-radius: 8px;
+  background-color: ${cores.vermelho};
+  border: 10px solid ${cores.vermelho};
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -56,13 +56,13 @@ export const Infos = styled.div`
 `
 
 export const Tituloprato = styled.h3`
-  color: ${cores.preta};
-  font-size: 20px;
+  color: ${cores.branco};
+  font-size: 16px;
   margin-bottom: 8px;
 `
 
 export const Descricao = styled.p`
-  color: ${cores.preta};
+  color: ${cores.branco};
   font-size: 14px;
   flex: 1;
 `
@@ -70,8 +70,8 @@ export const Descricao = styled.p`
 export const Botao = styled.button`
   display: inline-block;
   text-align: center;
-  background-color: ${cores.vermelho};
-  color: ${cores.branco};
+  background-color: ${cores.branco};
+  color: ${cores.vermelho};
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
