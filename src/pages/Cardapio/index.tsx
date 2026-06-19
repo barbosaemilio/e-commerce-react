@@ -60,7 +60,6 @@ const Cardapio = () => (
     <Header />
     <Hero />
     <Container>
-      <S.Titulo>Nosso Cardápio</S.Titulo>
       <S.Lista>
         {pratos.map((prato) => (
           <S.Card key={prato.id}>

@@ -8,13 +8,12 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 40px;
 `
 
 export const Card = styled.div`
   position: relative;
   width: 472px;
-  background-color: ${cores.cinza};
+  background-color: ${cores.branco3};
   border-right: 1px solid ${cores.vermelho};
   border-left: 1px solid ${cores.vermelho};
   border-bottom: 1px solid ${cores.vermelho};

@@ -5,17 +5,18 @@ import headerBg from '../../assets/images/fundo.png'
 export const Header = styled.header`
   width: 100%;
   height: 186px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
     url(${headerBg});
   background-size: cover;
   background-position: center;
 
-  media (max-width: 768px) {
+  @media (max-width: 768px) {
     height: 140px;
   }
 
   @media (max-width: 480px) {
     height: 100px;
+  }
 `
 export const Inner = styled.div`
   max-width: 1024px;
@@ -51,7 +52,7 @@ export const Carrinho = styled.span`
 
 export const Link = styled.a`
   color: ${cores.vermelho};
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
 

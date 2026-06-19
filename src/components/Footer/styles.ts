@@ -5,7 +5,7 @@ import { cores } from '../../styles'
 export const FooterContainer = styled.footer`
   height: 198px;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
     url(${fundo});
   background-size: cover;
   background-position: center;
@@ -14,7 +14,7 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 42px;
+  margin-top: 60px;
 
   @media (max-width: 768px) {
     height: auto;

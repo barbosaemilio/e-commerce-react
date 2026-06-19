@@ -3,8 +3,8 @@ import styled, { createGlobalStyle } from 'styled-components'
 export const cores = {
   vermelho: '#E66767',
   branco: '#FFEBD9',
-  cinza: '#EEEEEE',
-  preta: '#111'
+  branco2: '#FFF8F2',
+  branco3: '#FFFFFF'
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -21,8 +21,7 @@ export const GlobalCss = createGlobalStyle`
 }
 
   body {
-  background-color: ${cores.branco};
-  padding-top: 40px;
+  background-color: ${cores.branco2};
 }
 `
 export const Container = styled.div`
@@ -31,7 +30,7 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 16px;
 
-  @media (max-width 768px) {
+  @media (max-width: 768px) {
     padding: 0 12px;
   }
 `

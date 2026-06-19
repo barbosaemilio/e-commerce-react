@@ -5,7 +5,7 @@ import fundo from '../../assets/images/fundo.png'
 export const Container = styled.div`
   width: 100vw;
   height: 384px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
     url(${fundo});
   background-size: cover;
   background-position: center;
@@ -15,7 +15,8 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 40px 0 48px;
   margin-left: calc(-50vw + 50%);
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 0px;
 
   h1 {
     color: ${cores.vermelho};

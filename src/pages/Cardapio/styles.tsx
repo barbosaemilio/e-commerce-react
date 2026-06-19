@@ -1,17 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
-export const Titulo = styled.h2`
-  color: ${cores.branco};
-  font-size: 32px;
-  text-align: center;
-  margin: 40px 0 24px 0;
-
-  @media (max-width: 480px) {
-    font-size: 24px;
-  }
-`
-
 export const Lista = styled.div`
   display: flex;
   flex-wrap: wrap;
