@@ -3,6 +3,7 @@ import image1 from '../../assets/images/image 1.png'
 import image2 from '../../assets/images/imagem (1).png'
 import image3 from '../../assets/images/drink.jpg'
 import image4 from '../../assets/images/hamburger.jpg'
+import { Link } from 'react-router-dom'
 
 const Cards = () => (
   <S.Container>
@@ -21,7 +22,9 @@ const Cards = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           debitis fuga labore alias? Amet nulla optio nobis.
         </S.Descricao>
-        <S.Botao href="#">Saiba mais</S.Botao>
+        <Link to="/cardapio">
+          <S.Botao href="#">Saiba mais</S.Botao>
+        </Link>
       </S.Infos>
     </S.Card>
 
@@ -40,7 +43,9 @@ const Cards = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
           corporis, cumque facere autem dolores neque dignissimos.
         </S.Descricao>
-        <S.Botao href="#">Saiba mais</S.Botao>
+        <Link to="/cardapio">
+          <S.Botao href="#">Saiba mais</S.Botao>
+        </Link>
       </S.Infos>
     </S.Card>
 
@@ -59,7 +64,9 @@ const Cards = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
           corporis, cumque facere autem dolores neque dignissimos.
         </S.Descricao>
-        <S.Botao href="#">Saiba mais</S.Botao>
+        <Link to="/cardapio">
+          <S.Botao href="#">Saiba mais</S.Botao>
+        </Link>
       </S.Infos>
     </S.Card>
 
@@ -78,7 +85,9 @@ const Cards = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
           corporis, cumque facere autem dolores neque dignissimos.
         </S.Descricao>
-        <S.Botao href="#">Saiba mais</S.Botao>
+        <Link to="/cardapio">
+          <S.Botao href="#">Saiba mais</S.Botao>
+        </Link>
       </S.Infos>
     </S.Card>
 
@@ -97,7 +106,9 @@ const Cards = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           debitis fuga labore alias? Amet nulla optio nobis.
         </S.Descricao>
-        <S.Botao href="#">Saiba mais</S.Botao>
+        <Link to="/cardapio">
+          <S.Botao href="#">Saiba mais</S.Botao>
+        </Link>
       </S.Infos>
     </S.Card>
 
@@ -116,7 +127,9 @@ const Cards = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
           corporis, cumque facere autem dolores neque dignissimos.
         </S.Descricao>
-        <S.Botao href="#">Saiba mais</S.Botao>
+        <Link to="/cardapio">
+          <S.Botao href="#">Saiba mais</S.Botao>
+        </Link>
       </S.Infos>
     </S.Card>
   </S.Container>

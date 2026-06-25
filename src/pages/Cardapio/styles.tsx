@@ -7,6 +7,7 @@ export const Lista = styled.div`
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 40px;
+  margin-top: 80px;
 
   @media (max-width: 768px) {
     justify-content: center;
