@@ -9,7 +9,7 @@ import closeImg from '../../assets/images/close.png'
 const Restaurante = () => {
   const { id } = useParams<{ id: string }>()
   const { restaurante, loading, erro } = useRestaurante(id)
-  const [pratoselecionado, setPratoSelecionado] = useState<Prato | null>(null)
+  const [, setPratoSelecionado] = useState<Prato | null>(null)
   const navigate = useNavigate()
 
   if (loading) return <p>Carregando...</p>
