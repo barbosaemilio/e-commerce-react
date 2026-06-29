@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 const Header = () => (
   <S.Header>
     <S.Inner>
-      <S.Link href="#">Restaurante</S.Link>
-      <Link to="/">
-        <S.Logo src={logo} alt="Logo" />
-      </Link>
+      <S.Link as={Link} to="/">
+        Restaurante
+      </S.Link>
+      <S.Logo src={logo} alt="Logo" />
       <S.Carrinho>0 produto(s) no carrinho</S.Carrinho>
     </S.Inner>
   </S.Header>

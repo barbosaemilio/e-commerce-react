@@ -47,7 +47,7 @@ export const Tag = styled.span`
   font-size: 11px;
   font-weight: bold;
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 2px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 `
@@ -77,17 +77,17 @@ export const Avaliacao = styled.div`
   gap: 4px;
   white-space: nowrap;
 
-  span {
+  span:first-child {
     color: ${cores.vermelho};
     font-size: 14px;
     font-weight: bold;
   }
 `
 
-export const Estrela = styled.span`
-  color: #f5a623;
-  font-size: 16px;
-  line-height: 1;
+export const Estrela = styled.img`
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
 `
 
 export const Descricao = styled.p`
@@ -111,6 +111,7 @@ export const Botao = styled.a`
   width: 82px;
   height: 24px;
   line-height: 24px;
-  border-radius: 4px;
+  border-radius: 2px;
   align-self: flex-start;
+  cursor: pointer;
 `

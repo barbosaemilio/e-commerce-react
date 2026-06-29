@@ -1,137 +1,38 @@
 import * as S from './styles'
-import image1 from '../../assets/images/image 1.png'
-import image2 from '../../assets/images/imagem (1).png'
-import image3 from '../../assets/images/drink.jpg'
-import image4 from '../../assets/images/hamburger.jpg'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import useRestaurantes from '../../hooks/useRestaurantes'
+import estrelaImg from '../../assets/images/estrela.png'
 
-const Cards = () => (
-  <S.Container>
-    <S.Card>
-      <S.Imagem src={image1} alt="Prato 1" />
-      <S.Tag>Italiano</S.Tag>
-      <S.Infos>
-        <S.TopRow>
-          <S.Titulo>La Dolce Vita Trattoria</S.Titulo>
-          <S.Avaliacao>
-            <span>4.5</span>
-            <S.Estrela>★</S.Estrela>
-          </S.Avaliacao>
-        </S.TopRow>
-        <S.Descricao>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          debitis fuga labore alias? Amet nulla optio nobis.
-        </S.Descricao>
-        <Link to="/cardapio">
-          <S.Botao href="#">Saiba mais</S.Botao>
-        </Link>
-      </S.Infos>
-    </S.Card>
+const Cards = () => {
+  const { restaurantes, loading, erro } = useRestaurantes()
+  const navigate = useNavigate()
 
-    <S.Card>
-      <S.Imagem src={image2} alt="Prato 2" />
-      <S.Tag>Japonês</S.Tag>
-      <S.Infos>
-        <S.TopRow>
-          <S.Titulo>Hioki Sushi</S.Titulo>
-          <S.Avaliacao>
-            <span>4.8</span>
-            <S.Estrela>★</S.Estrela>
-          </S.Avaliacao>
-        </S.TopRow>
-        <S.Descricao>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
-          corporis, cumque facere autem dolores neque dignissimos.
-        </S.Descricao>
-        <Link to="/cardapio">
-          <S.Botao href="#">Saiba mais</S.Botao>
-        </Link>
-      </S.Infos>
-    </S.Card>
+  if (loading) return <p>Carregando...</p>
+  if (erro) return <p>{erro}</p>
 
-    <S.Card>
-      <S.Imagem src={image3} alt="Prato 3" />
-      <S.Tag>Sobremesas</S.Tag>
-      <S.Infos>
-        <S.TopRow>
-          <S.Titulo>Sobremesas</S.Titulo>
-          <S.Avaliacao>
-            <span>4.2</span>
-            <S.Estrela>★</S.Estrela>
-          </S.Avaliacao>
-        </S.TopRow>
-        <S.Descricao>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
-          corporis, cumque facere autem dolores neque dignissimos.
-        </S.Descricao>
-        <Link to="/cardapio">
-          <S.Botao href="#">Saiba mais</S.Botao>
-        </Link>
-      </S.Infos>
-    </S.Card>
+  return (
+    <S.Container>
+      {restaurantes.map((restaurante) => (
+        <S.Card key={restaurante.id}>
+          <S.Imagem src={restaurante.capa} alt={restaurante.titulo} />
+          <S.Tag>{restaurante.tipo}</S.Tag>
+          <S.Infos>
+            <S.TopRow>
+              <S.Titulo>{restaurante.titulo}</S.Titulo>
+              <S.Avaliacao>
+                <span>{restaurante.avaliacao}</span>
+                <S.Estrela src={estrelaImg} alt="Avaliação" />
+              </S.Avaliacao>
+            </S.TopRow>
+            <S.Descricao>{restaurante.descricao}</S.Descricao>
+            <S.Botao onClick={() => navigate(`/cardapio/${restaurante.id}`)}>
+              Saiba mais
+            </S.Botao>
+          </S.Infos>
+        </S.Card>
+      ))}
+    </S.Container>
+  )
+}
 
-    <S.Card>
-      <S.Imagem src={image4} alt="Prato 4" />
-      <S.Tag>Hamburger</S.Tag>
-      <S.Infos>
-        <S.TopRow>
-          <S.Titulo>Hamburguer Artesanal</S.Titulo>
-          <S.Avaliacao>
-            <span>4.7</span>
-            <S.Estrela>★</S.Estrela>
-          </S.Avaliacao>
-        </S.TopRow>
-        <S.Descricao>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
-          corporis, cumque facere autem dolores neque dignissimos.
-        </S.Descricao>
-        <Link to="/cardapio">
-          <S.Botao href="#">Saiba mais</S.Botao>
-        </Link>
-      </S.Infos>
-    </S.Card>
-
-    <S.Card>
-      <S.Imagem src={image1} alt="Prato 1" />
-      <S.Tag>Italiano</S.Tag>
-      <S.Infos>
-        <S.TopRow>
-          <S.Titulo>La Dolce Vita Trattoria</S.Titulo>
-          <S.Avaliacao>
-            <span>4.5</span>
-            <S.Estrela>★</S.Estrela>
-          </S.Avaliacao>
-        </S.TopRow>
-        <S.Descricao>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          debitis fuga labore alias? Amet nulla optio nobis.
-        </S.Descricao>
-        <Link to="/cardapio">
-          <S.Botao href="#">Saiba mais</S.Botao>
-        </Link>
-      </S.Infos>
-    </S.Card>
-
-    <S.Card>
-      <S.Imagem src={image2} alt="Prato 2" />
-      <S.Tag>Japonês</S.Tag>
-      <S.Infos>
-        <S.TopRow>
-          <S.Titulo>Hioki Sushi</S.Titulo>
-          <S.Avaliacao>
-            <span>4.8</span>
-            <S.Estrela>★</S.Estrela>
-          </S.Avaliacao>
-        </S.TopRow>
-        <S.Descricao>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet
-          corporis, cumque facere autem dolores neque dignissimos.
-        </S.Descricao>
-        <Link to="/cardapio">
-          <S.Botao href="#">Saiba mais</S.Botao>
-        </Link>
-      </S.Infos>
-    </S.Card>
-  </S.Container>
-)
 export default Cards

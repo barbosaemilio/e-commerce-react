@@ -1,11 +1,18 @@
 import * as S from './styles'
 
-const Hero = () => (
-  <S.Hero>
+type Props = {
+  tipo: string
+  titulo: string
+  capa: string
+}
+
+const Hero = ({ tipo, titulo, capa }: Props) => (
+  <S.Hero $capa={capa}>
     <S.Inner>
-      <p>Italiana</p>
-      <h1>La Dolce Vita Trattoria</h1>
+      <p>{tipo}</p>
+      <h1>{titulo}</h1>
     </S.Inner>
   </S.Hero>
 )
+
 export default Hero

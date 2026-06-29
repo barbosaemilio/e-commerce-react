@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 import { GlobalCss } from './styles'
 import Cardapio from './pages/Cardapio'
-import Restaurante from './pages/Restaurante'
+import Restaurante from './pages/Modal'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
             </>
           }
         />
-        <Route path="/Cardapio" element={<Cardapio />} />
+        <Route path="/cardapio/:id" element={<Cardapio />} />
         <Route path="/restaurante/:id" element={<Restaurante />} />
       </Routes>
       <Footer />

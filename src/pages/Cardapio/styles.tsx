@@ -67,7 +67,71 @@ export const Botao = styled.button`
   font-size: 14px;
   padding: 8px 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 2px;
   margin-top: 16px;
   cursor: pointer;
+`
+export const BotaoModal = styled(Botao)`
+  width: 210px;
+  height: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const ModalOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+`
+
+export const Modal = styled.div`
+  background: ${cores.vermelho};
+  display: flex;
+  max-width: 960px;
+  width: 90%;
+  position: relative;
+`
+
+export const ModalFoto = styled.img`
+  width: 280px;
+  object-fit: cover;
+`
+
+export const ModalConteudo = styled.div`
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+`
+
+export const BotaoFechar = styled.img`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  cursor: pointer;
+`
+
+export const ModalTitulo = styled.h2`
+  font-size: 18px;
+  font-weight: bold;
+  color: ${cores.branco};
+`
+
+export const ModalDescricao = styled.p`
+  font-size: 14px;
+  color: ${cores.branco};
+`
+
+export const ModalPorcao = styled.p`
+  font-size: 14px;
+  font-style: italic;
+  color: ${cores.branco};
 `

@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import heroBg from '../../assets/images/image.png'
 import { cores } from '../../styles'
 
 export const Hero = styled.div`
   width: 100%;
   height: 280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${heroBg});
+    url(${({ $capa }) => $capa});
   background-size: cover;
   background-position: center;
   margin-bottom: 60px;
